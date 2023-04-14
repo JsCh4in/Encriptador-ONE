@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">    
+    
+</head>
+<body>
+    
+    <div class="contenedor">
+        
+        <div class="encabezado">
+
+            <img src="imagenes/logo.png" class="logo1">
+            <h1 class="titulo">Encriptador ONE</h1>
+
+        </div>
+
+        <div class="entrada">
+
+            <textarea name="Ingereso" id="texto1" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="div2">
+                <p  class="parrafo">Solo letras minúsculas y sin acentos</p>
+                <button id="encriptar" class="botones" onclick="encriptar1()">Encriptar</button>
+                <button id="desencriptar" class="botones" onclick="desencriptar()">Desencriptar</button>
+            </div>    
+           
+
+        </div>
+
+        <div class="salida">
+            <div class="no-found">
+                <img src="imagenes/buscador.png" id="img2">
+                <h2 id="titulo2">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo2">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+            <textarea name="salida" id="texto2"></textarea>
+            <button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
+
+        </div>
+        <footer>
+            <p>Johan Cadena</p>
+        </footer>
+
+    </div>
+  
+</body>
+</html>
